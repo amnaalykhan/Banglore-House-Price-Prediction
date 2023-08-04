@@ -294,5 +294,4 @@ with model_training:
         x[loc_index]=1
     predicted_price=lr_clf.predict([x])[0]
     st.success(f"Predicted Price: ₹ {predicted_price:.2f} Lakhs")
-    st.markdown('<style>body{background-color: #f8f9fa;}</style>', unsafe_allow_html=True)
-    st.sidebar.markdown('<style>.sidebar .sidebar-content{background-color: #343a40;}</style>', unsafe_allow_html=True)
+    
