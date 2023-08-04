@@ -11,8 +11,8 @@ dataset=st.container()
 model_training=st.container()
 @st.cache#this function will only run once it is called caching
 def get_data(filename):
-    BHP=pd.read_csv(filename,index_col=0)
-    return BHP
+    x=pd.read_csv(filename,index_col=0)
+    return x
 with dataset:
     BHP=get_data("final.csv")
     a=get_data("Bengaluru_House_Data.csv")
