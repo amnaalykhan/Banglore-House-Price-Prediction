@@ -8,7 +8,6 @@ st.markdown("Dreaming of a new house :house: is an exciting dream to experience.
 st.image("house1.jpg")
 header=st.container()
 dataset=st.container()
-features=st.container()
 model_training=st.container()
 @st.cache#this function will only run once it is called caching
 def get_data(filename):
