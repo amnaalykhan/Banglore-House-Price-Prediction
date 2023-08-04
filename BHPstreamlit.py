@@ -14,8 +14,8 @@ def get_data(filename):
     BHP=pd.read_csv(filename)
     return BHP
 with dataset:
-    BHP=pd.read_csv("final.csv",index_col=0)
-    a =pd.read_csv("Bengaluru_House_Data.csv")
+    BHP=get_data("final.csv",index_col=0)
+    a =get_data("Bengaluru_House_Data.csv")
     st.write(a.head())
     st.bar_chart(data=BHP.head(50), x="BHK", y="price")
     st.write("What are the things that a potential home buyer considers before purchasing a house? The location, the size of the property, vicinity to offices, schools, parks, restaurants, hospitals or the stereotypical white picket fence? What about the most important factor — the price?")
